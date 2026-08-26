@@ -1,0 +1,117 @@
+  *{
+          box-sizing: border-box;
+        }
+        .Id-Card{
+            width: 350px;
+            min-height: 550px;
+            margin: auto;
+            background: #bfe4f6;
+            border-radius: 0 0 6px 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            position: relative;
+
+        }
+        .header {
+            height: 110px;
+            background: #2864e8;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+        }
+         .logo {
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            background: white;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+         .logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .info {
+            text-align: center;
+            flex: 1;
+            line-height: 1.35;
+        }
+
+        .school-name {
+            color: #ffff00;
+            font-size: 15px;
+            font-weight: bold;
+        } 
+
+        .school-info .line {
+            font-size: 13px;
+        }
+
+        .school-info .contact {
+            font-size: 12px;
+            margin-top: 2px; 
+         }
+        .Aff1 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 0;
+            color: #333;
+        }
+      
+        .photo-section {
+            text-align: center;
+            padding-top: 1px;
+        }
+
+        .student-photo {
+            width: 95px;
+            height: 112px;
+            object-fit: cover;
+            border: 1px solid #333;
+            border-radius: 11px;
+        }
+        .Session {
+            text-align: center;
+            color: #a84c4c;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .Details {
+            background: #0808e8;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 7px 3px;
+        }
+        .Details {
+            padding: 4px 9px 0;
+            background: rgba(44, 44, 230, 0.975);
+        }
+
+        .Basic-info{
+            display: grid;
+            grid-template-columns: 133px 1fr;
+            min-height: 23px;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .label {
+            color: #555;
+        }
+
+        .value {
+            font-weight: bold;
+            color: #444;
+        }
+        .bottom {
+            height: 72px;
+            position: relative;
+            padding: 5px 8px;
+        }
