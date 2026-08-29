@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page </title>
+    <link rel="Stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+
+            <h1> Create a Account</h1>
+            <form id="signupForm">
+                <p>Name</p>
+                <input id="fullName" type="text" placeholder="Enter Full Name">
+                <p>Email Id</p>
+                <input id="signupEmail" type="email" placeholder="Email">
+                <p>Mobile No</p>
+                <input id="Mobile" type="Mobile" placeholder="Mobile ">
+
+                <p>Password</p>
+                <div class="password-box">
+                    <input type="password" id="signupPassword" type="text" placeholder="Password">
+                    <button type="button" onclick="togglePassword('signupPassword', this)"> Show
+                    </button>
+                </div>
+
+                <p>Confirm Password</p>
+
+                <div class="password-box">
+                    <input type="password" id="confirmPassword" type="text" placeholder="Confirm Password">
+                    <button type="button" onclick="togglePassword('confirmPassword', this)"> Show
+                    </button>
+                </div>
+
+                <label class="terms">
+                    <input type="checkbox" id="terms">
+                    I agree to Terms & Conditions
+                </label>
+                <p id="signupError" class="error"></p>
+                <p id="signupSuccess" class="success"></p>
+
+                <button type="submit" class="btn">
+                    SignUp
+                </button>
+                
+            </form>
+            <p> Already have an Account?<a href="login.html">Login</a></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
