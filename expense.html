@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: lightblue;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .MainExpense {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .box {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background: greenyellow;
+            border-radius: 8px;
+        }
+
+        .box h2 {
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #expenseForm {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: #222;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1> Best Expense Tracker</h1>
+        <div class="MainExpense">
+            <div class="box">
+                <h2>Income</h2>
+                <p id="income"> &#8377 0</p>
+            </div>
+            <div class="box">
+                <h2>Expenses</h2>
+                <p id="expenses"> &#8377 0</p>
+            </div>
+            <div class="box">
+                <h2> Left Balance</h2>
+                <p id="leftbalance"> &#8377 0</p>
+            </div>
+
+        </div>
+        <form id="expenseForm">
+            <input type="text" placeholder="Expense" id="expense">
+            <input type="text" placeholder="Amount" id="amount">
+            <input type="text" placeholder="Message" id="spend">
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Total Expense</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
